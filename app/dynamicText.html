@@ -1,0 +1,25 @@
+<h1>The label changes dynamically with the userInput </h1>
+
+<html>
+
+<head>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+</head>
+
+<body ng-app="">
+
+<div>
+
+  <input type="text" ng-model="name" />
+
+    <mat-label ng-if="name"> {{name}}</mat-label>
+
+    <mat-label ng-if="!name"> "write something in the input field to change this label"</mat-label>
+
+</div>
+
+
+</html>
+
